@@ -1,32 +1,19 @@
 import React, { useState } from "react";
 
-const SignUpForm = () => {
-  const initialState = {
-    email: "",
-    password: "",
-  };
-
-  const [state, setState] = useState(initialState);
-
-  console.log("state", state);
-
-  const inputHandler = (e) =>
-    setState({ ...state, [e.target.name]: e.target.value });
-
-  const handleSubmit = () => {};
-
+const SignUpForm = ({ inputHandler, handleSubmit }) => {
   return (
     <>
       <label name="Password">Email</label>
       <input
         name="email"
         className="form-control"
-        placeholder="Enter Email"
+        placeholder="abc@gmail.com"
         onChange={inputHandler}
       />
       <label name="Password">Password</label>
       <input
         name="password"
+        type="password"
         className="form-control"
         placeholder="Enter Password"
         onChange={inputHandler}

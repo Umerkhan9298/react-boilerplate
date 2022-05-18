@@ -1,40 +1,24 @@
 import React, { useState } from "react";
 
-const SignUpForm = () => {
-  const initialState = {
-    first_name: "",
-    last_name: "",
-    email: "",
-    password: "",
-  };
-
-  const [state, setState] = useState(initialState);
-
-  console.log("state", state);
-
-  const inputHandler = (e) =>
-    setState({ ...state, [e.target.name]: e.target.value });
-
-  const handleSubmit = () => {};
-
+const SignUpForm = ({ inputHandler, handleSubmit }) => {
   return (
     <>
       <div className="row">
         <div className="col-md-6">
           <label name="first_name">First Name</label>
           <input
-            name="email"
+            name="first_name"
             className="form-control"
-            placeholder="Enter Email"
+            placeholder="John"
             onChange={inputHandler}
           />
         </div>
         <div className="col-md-6">
           <label name="last_name">Last Name</label>
           <input
-            name="email"
+            name="last_name"
             className="form-control"
-            placeholder="Enter Email"
+            placeholder="Doe"
             onChange={inputHandler}
           />
         </div>
@@ -43,12 +27,13 @@ const SignUpForm = () => {
       <input
         name="email"
         className="form-control"
-        placeholder="Enter Email"
+        placeholder="abc@gmail.com"
         onChange={inputHandler}
       />
       <label name="Password">Password</label>
       <input
         name="password"
+        type="password"
         className="form-control"
         placeholder="Enter Password"
         onChange={inputHandler}
