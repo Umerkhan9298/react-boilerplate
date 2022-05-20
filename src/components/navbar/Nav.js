@@ -15,8 +15,8 @@ const Nav = () => {
           Books
         </NavLink>
         {" | "}
-        <NavLink to="/about" activeStyle={activeStyle}>
-          About
+        <NavLink to="/authors" activeStyle={activeStyle}>
+          Authors
         </NavLink>
         {" | "}
         <NavLink to="/sign-in" activeStyle={activeStyle}>

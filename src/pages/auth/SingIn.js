@@ -18,7 +18,7 @@ const SingIn = () => {
 
   return (
     <div className="container">
-      <h1>Sign In</h1>
+      <h2>Sign In</h2>
       <SignInForm inputHandler={inputHandler} handleSubmit={handleSubmit} />
     </div>
   );

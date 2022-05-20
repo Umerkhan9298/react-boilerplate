@@ -20,7 +20,7 @@ const SignIn = () => {
 
   return (
     <div className="container">
-      <h1>Sign Up</h1>
+      <h2>Sign Up</h2>
       <SignUpForm inputHandler={inputHandler} handleSubmit={handleSubmit} />
     </div>
   );
