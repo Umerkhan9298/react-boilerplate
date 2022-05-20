@@ -11,10 +11,10 @@ import SingIn from "./pages/auth/SingIn";
 import SignUp from "./pages/auth/SignUp";
 
 // Components
-import Nav from "./components/navbar";
 import NavBar from "./components/navbar/Nav";
 
 const App = () => {
+  console.log("env", process.env.REACT_APP_URL);
   return (
     <div>
       <NavBar />
